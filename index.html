@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="public/style/estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body1>
+  <!--Header y Navbar-->
+    <header>
+        <div class="navbarnavbar">
+            <div class="menu containercont">
+                <a href="#" class="logo"> <img src="public/img/logo.png" width="180" alt="Logo"> </a>
+                <input type="checkbox" id="menu" />
+                <label for="menu">
+                    <img src="public/img/menu.png" class="menu-icon" alt="">
+                </label>
+                <nav class="navbarlist">
+                    <ul>
+                        <li><a href="#">INICIO</a></li>
+                        <li><a href="public/views/productos.html">PRODUCTOS</a></li>
+                        <li><a href="public/views/sobrenosotros.html">SOBRE NOSOTROS</a></li>
+                        <li><a href="public/views/contacto.html">CONTACTO</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--Carrousel Bootstrap-->
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="public/img/bannerweb-01.jpg" class="d-block w-100" alt="banner1">
+          </div>
+          <div class="carousel-item">
+            <img src="public/img/bannerweb-02.jpg" class="d-block w-100" alt="banner2">
+          </div>
+          <div class="carousel-item">
+            <img src="public/img/bannnn.jpg" class="d-block w-100" alt="banner3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+   <!--Productos-->
+      <section class="Products">
+        <div class="titleproduct">
+          <h1>Nuestros productos principales</h1>
+        </div>
+        <div class="rowproducts">
+          <div class="col">
+            <img src="public/img/modelo1.jpg" alt="model1">
+            <a href="public/views/productos.html"><h3>Vestido denim upcycling</h3></a>
+          </div>
+          <div class="col">
+            <img src="public/img/modelo2.jpg" alt="model2">
+            <a href="public/views/productos.html"><h3>Top denim upcycling</h3></a>
+          </div>
+        </div>
+      </section>
+  <!--Pie de pagina-->
+  <footer class="pie-pagina">
+    <div class="grupo-01">
+      <div class="box">
+        <figure>
+          <a href="#">
+            <img src="public/img/logo.png" alt="LogoBlooming">
+          </a>
+        </figure>
+      </div>
+      <div class="box">
+        <h4>SOBRE NOSOTROS</h4>
+        <p>Somos una marca que desarrolla productos para personas con escoliosis reciclando denim.</p>
+      </div>
+      <div class="box">
+        <h4>SIGUENOS</h4>
+        <div class="red-social">
+          <a href="public/views/Agustina Vernetti on Behance.html"> <img src="public/img/behance.png" alt="bh" width="20px" > </a>
+          <a href="public/views/(4) Agustina Vernetti _ LinkedIn.html"> <img src="public/img/linkedin (1).png" width="20px" alt="linkedin"> </a>
+        </div>
+      </div>
+    </div>
+    <div class="grupo-02">
+      <small>&copy;2023 <b>Agustina Vernetti</b> - Todos los Derechos Reservados</small>
+    </div>
+  </footer>
+</body1>
+</html>

@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body1 {
+    background: #f7e6e4;
+    background-color: #f7e6e4;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/*::::::Header y Navbar*/
+.containercont {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.navbarnavbar {
+    padding: 32px 0;
+    background-color: #F3DAD6;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.menu .navbarlist ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbarlist ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #D36963;
+    display: block;
+    text-decoration: none;
+}
+
+.menu .navbarlist ul li a:hover {
+    color: #F6B969;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icon {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width:991px) {
+    .menu {
+        padding: 30px;
+    }
+    .menu label {
+        display: initial;
+    }
+    .navbarnavbar {
+        padding: 54px 0;
+    }
+    .menu .navbarlist {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #F3DAD6;
+        display: none;
+    }
+    .menu .navbarlist ul li {
+        width: 100%;
+    }
+    #menu:checked ~ .navbarlist {
+        display: initial;
+    }
+}
+/*::::::Products*/
+.article {
+    display: flex;
+    flex-direction: row;
+}
+.products {
+    background-color: #f7e6e4;
+}
+
+.titleproduct h1 {
+    text-align: center;
+    font-size: 32px;
+    color: #D36963;
+    background-color: #f7e6e4;
+}
+
+h2 {
+    text-align: center;
+    font-size: 25px;
+    color: #F6B969;
+}
+
+.rowproducts .col h3 {
+    font-size: 18px;
+    color: #D36963;
+    margin: 20px auto;
+    text-decoration: none;
+}
+
+.aboutus .rowrow {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.aboutus {
+    margin: 100px;
+}
+
+.rowproducts {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 100px;
+}
+
+.rowproducts .col img {
+    width: 60%;
+}
+
+.rowproducts .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titleproduct  {
+    margin: 30px
+}
+
+.products h1 {
+    text-align: center;
+    font-size: 32px;
+    color: #D36963;
+}
+/*::::::Pie de Pagina*/
+.pie-pagina {
+    width: 100%;
+    background-color: #F3DAD6;
+}
+.pie-pagina .grupo-01 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-01 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-01 .box figure img {
+    width: 250px;
+}
+.pie-pagina .grupo-01 .box h4 {
+    color: #D36963;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+.pie-pagina .grupo-01 .box .p {
+    color: #F6B969;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-02 {
+    background-color: #D36963;
+    padding: 15px 10px;
+    text-align: center;
+    color: #F3DAD6;
+}
+/*::::::Contacto*/
+.container-form {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.container-form h2 {
+    margin-bottom: 15px;
+    font-size: 35px;
+}
+.container-form p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.container-form a {
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: 700;
+}
+.container-form a img {
+    margin-right: 10px;
+}
+.container-form form .campo ,textarea {
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 15px;
+    border: 1 px solid #dbdbdb;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
+}
+.container-form form textarea {
+    max-width: 530px;
+    min-width: 530px;
+    min-height: 140px;
+    max-height: 150px;
+}
+.container-form .btn-enviar {
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background: #D36963;
+    background-color: #D36963;
+    color: #F3DAD6;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+/*::::::Sobre nosotros*/
+.aboutus {
+    margin-top: 20px;
+}
+.aboutus h1 {
+    text-align: center;
+    font-size: 32px;
+    color: #D36963;
+}
+.video {
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 160px;
+}
+/*::::::Card bootstrap*/
+.title h1 {
+    text-align: center;
+    font-size: 32px;
+    color: #D36963;
+    margin-top: 20px;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 30px;
+    padding: 20px;
+}
+.row .card .card-body .btn-btn-primary {
+    background-color: #D36963;
+    color: #F3DAD6;
+    text-decoration: none;
+    border-radius: 3px;
+    border: 2px solid #D36963;
+}
