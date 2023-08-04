@@ -158,6 +158,8 @@ h2 {
 .pie-pagina {
     width: 100%;
     background-color: #F3DAD6;
+    position: fixed
+    bottom: 0;
 }
 .pie-pagina .grupo-01 {
     width: 100%;
